@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maria Flor — Costura & Bordados</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style mariaflor.css">
+</head>
+<body>
+
+<!-- ================================
+     NAVBAR (shared, always visible)
+================================ -->
+<nav>
+  <div class="logo" onclick="goTo('inicial')">Maria Fl<span>✿</span>r</div>
+  <ul>
+    <li><a onclick="goTo('inicial')" id="nav-inicial" class="active">Inicial</a></li>
+    <li><a onclick="goTo('produtos')" id="nav-produtos">Produtos</a></li>
+    <li><a onclick="goTo('sobre')" id="nav-sobre">Sobre Nós</a></li>
+    <li><a onclick="goTo('contato')" id="nav-contato">Contato</a></li>
+  </ul>
+  <button class="btn-encomendar" onclick="goTo('contato')">ENCOMENDAR</button>
+</nav>
+
+
+<!-- ================================
+     PAGE: INICIAL
+================================ -->
+<div id="page-inicial" class="page active">
+
+  <div class="hero">
+    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1400&q=80" alt="Costura Maria Flor">
+    <div class="hero-overlay">
+      <p class="bem-vindo">✿ &nbsp; BEM-VINDO À</p>
+      <h1>Maria Flor<span>Costura &amp; Bordados</span></h1>
+    </div>
+  </div>
+  <hr class="hero-divider">
+
+  <div class="features-strip">
+    <div class="feature-item">
+      <div class="feature-icon">👗</div>
+      <div class="feature-text">
+        <h3>Costura Sob Medida</h3>
+        <p>Reparos e Ajustes de peças</p>
+      </div>
+    </div>
+    <div class="feature-divider"></div>
+    <div class="feature-item">
+      <div class="feature-icon">🧶</div>
+      <div class="feature-text">
+        <h3>Bordados Personalizados</h3>
+        <p>Peças Prontas e Bordados</p>
+      </div>
+    </div>
+    <div class="feature-divider"></div>
+    <div class="feature-item">
+      <div class="feature-icon">👜</div>
+      <div class="feature-text">
+        <h3>Materiais de Costura</h3>
+        <p>Kits de Costura</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header-brown">
+    <div class="line"></div>
+    <span class="diamond">◆</span>
+    <h2>CONHEÇA NOSSOS PRODUTOS</h2>
+    <span class="diamond">◆</span>
+    <div class="line"></div>
+  </div>
+
+  <div class="home-products-grid">
+    <div class="home-product-card" onclick="goTo('produtos')">
+      <img src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/04/Composicao-1_00009-3.jpg" alt="Tecidos">
+      <div class="home-product-card-label">Tecidos &amp; Aviamentos</div>
+    </div>
+    <div class="home-product-card" onclick="goTo('produtos')">
+      <img src="https://www.artbord.com.br/img/produtos/personalizados3.jpg" alt="Bordados">
+      <div class="home-product-card-label">Bordados Personalizados</div>
+    </div>
+    <div class="home-product-card" onclick="goTo('produtos')">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_682435-MLB98950019873_112025-O.webp" alt="Kits de Costura">
+      <div class="home-product-card-label">Kits de Costura</div>
+    </div>
+  </div>
+
+  <div class="section-header-plain">
+    <span class="diamond-ico">◆</span>
+    <h2>Sobre a Maria Flor</h2>
+    <span class="diamond-ico">◆</span>
+  </div>
+
+  <div class="about-section">
+    <div class="about-img">
+      <img src="https://i0.wp.com/blog.elgin.com.br/wp-content/uploads/maquina-de-costura-industrial-1-scaled.jpg" alt="Sobre Maria Flor">
+    </div>
+    <div class="about-text">
+      <h2>Feito com amor, ponto a ponto</h2>
+      <p>A Maria Flor nasceu da paixão pela costura e pelo artesanato. Somos especialistas em bordados personalizados, ajustes e consertos de peças, e também oferecemos uma linha completa de materiais para quem ama costurar.</p>
+      <p>Cada peça é tratada com carinho e atenção aos detalhes, garantindo um resultado final que supera as expectativas das nossas clientes.</p>
+      <button class="btn-saiba" onclick="goTo('sobre')">Saiba Mais</button>
+    </div>
+  </div>
+
+  <div class="section-header-plain">
+    <span class="diamond-ico">◆</span>
+    <h2>O Que Nossas Clientes Dizem</h2>
+    <span class="diamond-ico">◆</span>
+  </div>
+
+  <div class="depoimentos-grid">
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p>"O bordado que encomendei ficou absolutamente lindo! A qualidade é incrível e o prazo foi cumprido perfeitamente."</p>
+      <div class="author">— Ana Paula S.</div>
+    </div>
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p>"Fiz o ajuste do vestido de noiva aqui e não poderia ter escolhido lugar melhor. Atendimento excelente e resultado perfeito!"</p>
+      <div class="author">— Mariana T.</div>
+    </div>
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p>"Os kits de costura são de ótima qualidade e o preço é muito justo. Já comprei três vezes e sempre fico satisfeita."</p>
+      <div class="author">— Carla F.</div>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div>
+      <h2>Faça seu pedido personalizado!</h2>
+      <p>Entre em contato conosco e transforme suas ideias em peças únicas. Bordados, ajustes e muito mais — tudo feito com carinho e dedicação.</p>
+    </div>
+    <button class="btn-cta" onclick="goTo('contato')">ENCOMENDAR AGORA</button>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Maria Fl✿r</div>
+        <p>Especialistas em bordados personalizados, ajustes e materiais de costura. Feito com amor e dedicação em cada ponto.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a onclick="goTo('inicial')">Inicial</a></li>
+          <li><a onclick="goTo('produtos')">Produtos</a></li>
+          <li><a onclick="goTo('sobre')">Sobre Nós</a></li>
+          <li><a onclick="goTo('contato')">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#">(47) 9931-7844</a></li>
+          <li><a href="#">i.galeano@hotmail.com</a></li>
+          <li><a href="#">@mariaflorcostura</a></li>
+          <li><a href="#">Jaraguá do Sul, SC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Maria Flor — Todos os direitos reservados</div>
+  </footer>
+</div>
+
+
+<!-- ================================
+     PAGE: PRODUTOS
+================================ -->
+<div id="page-produtos" class="page">
+
+  <div class="produtos-section-header" style="margin-top: 48px;">
+    <span class="diamond">◆</span>
+    <h2>Nossos Serviços &amp; Produtos</h2>
+    <span class="diamond">◆</span>
+  </div>
+
+  <div class="products-grid">
+    <div class="product-card">
+      <img src="https://blog.maximustecidos.com.br/wp-content/uploads/2022/09/Ajustes-e-consertos.jpg" alt="Ajustes e Consertos">
+      <div class="card-body">
+        <h3>Ajustes e Consertos</h3>
+        <p>Reparos e Ajustes de peças</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://img.elo7.com.br/product/685x685/4D613C4/bordados-personalizados-lembrancinha.jpg" alt="Bordados Personalizados">
+      <div class="card-body">
+        <h3>Bordados Personalizados</h3>
+        <p>Peças Prontas e Bordados</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81LdllHhoiL.jpg" alt="Kits de Costura">
+      <div class="card-body">
+        <h3>Kits de Costura</h3>
+        <p>Peças e Kits para Costura</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="produtos-section-header">
+    <span class="diamond">◆</span>
+    <h2>Materiais de Costura</h2>
+    <span class="diamond">◆</span>
+  </div>
+
+  <div class="products-grid">
+    <div class="product-card">
+      <img src="https://www.armarinhosaojose.com.br/octopus/design/images/94/products/b/kit-agulhas-croche-metal-finas-ch089-12und.jpg" alt="Linhas e Agulhas">
+      <div class="card-body">
+        <h3>Linhas e Agulhas</h3>
+        <p>Variedade de linhas coloridas e agulhas para todos os tipos de costura</p>
+        <span class="price">A partir de R$ 8,90</span>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ8qK9K8kltuT53hfmvlXbNgs2XfSVlP2nfSjsDrhS2vmLeVyilrZG2NBxNIasGOcaGUidtJvrdwAZzUmPdJPInfNeammCxcp_Rb9eg1ShN5NLwNDI70TglCTJatQF1&usqp=CAc" alt="Kit de Costura Completo">
+      <div class="card-body">
+        <h3>Kit de Costura Completo</h3>
+        <p>Kit com tudo que você precisa: tesoura, linhas, agulhas e muito mais</p>
+        <span class="price">A partir de R$ 34,90</span>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://zanotti.com.br/blog/wp-content/uploads/2020/10/3-Escolha-tecidos-e-aviamentos-de-qualidade.jpg" alt="Tecidos e Aviamentos">
+      <div class="card-body">
+        <h3>Tecidos e Aviamentos</h3>
+        <p>Ampla seleção de tecidos em diversas cores, texturas e estampas</p>
+        <span class="price">A partir de R$ 12,90/m</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div>
+      <h2>Faça seu pedido personalizado!</h2>
+      <p>Entre em contato conosco e transforme suas ideias em peças únicas. Bordados, ajustes e muito mais — tudo feito com carinho e dedicação.</p>
+    </div>
+    <button class="btn-cta" onclick="goTo('contato')">ENCOMENDAR AGORA</button>
+  </div>
+
+  <div class="section-header" style="margin-top: 56px;">
+    <span class="diamond">◆</span>
+    <h2>O Que Nossas Clientes Dizem</h2>
+    <span class="diamond">◆</span>
+  </div>
+
+  <div class="depoimentos-grid">
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p>"O bordado que encomendei ficou absolutamente lindo! A qualidade é incrível e o prazo foi cumprido perfeitamente."</p>
+      <div class="author">— Ana Paula S.</div>
+    </div>
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p>"Fiz o ajuste do vestido de noiva aqui e não poderia ter escolhido lugar melhor. Atendimento excelente e resultado perfeito!"</p>
+      <div class="author">— Mariana T.</div>
+    </div>
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p>"Os kits de costura são de ótima qualidade e o preço é muito justo. Já comprei três vezes e sempre fico satisfeita."</p>
+      <div class="author">— Carla F.</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Maria Fl✿r</div>
+        <p>Especialistas em bordados personalizados, ajustes e materiais de costura. Feito com amor e dedicação em cada ponto.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a onclick="goTo('inicial')">Inicial</a></li>
+          <li><a onclick="goTo('produtos')">Produtos</a></li>
+          <li><a onclick="goTo('sobre')">Sobre Nós</a></li>
+          <li><a onclick="goTo('contato')">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#">(47) 9931-7844</a></li>
+          <li><a href="#">i.galeano@hotmail.com</a></li>
+          <li><a href="#">@mariaflorcostura</a></li>
+          <li><a href="#">Jaraguá do Sul, SC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Maria Flor — Todos os direitos reservados</div>
+  </footer>
+</div>
+
+
+<!-- ================================
+     PAGE: SOBRE NÓS
+================================ -->
+<div id="page-sobre" class="page">
+
+  <div class="quem-somos">
+    <div class="quem-somos-img">
+      <img src="img1.png" alt="Costureira Maria Flor">
+    </div>
+    <div class="quem-somos-text">
+      <div class="tag-title">Quem Somos?</div>
+      <p>O Atelier Maria Flor é uma loja dedicada à arte da costura e do bordado. Trabalhamos com roupas para bebês, mulheres e homens, além de realizar ajustes e trabalhos com retalhos. Oferecemos cada serviço com carinho, atenção aos detalhes e muita dedicação. Atuamos desde 2015, e nossa história começou de forma simples: com apenas uma máquina de costura em um pequeno quartinho onde nasceu o sonho que hoje se tornou realidade.</p>
+      <div class="logo-deco">
+        <div class="logo-deco-inner">
+          <div class="deco-icons">🧵 🌸</div>
+          <h2>Maria<span>Flor</span></h2>
+          <div class="deco-sub">✂️ 🪡</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <span class="diamond">◆</span>
+    <h2>Nossos Valores</h2>
+    <span class="diamond">◆</span>
+  </div>
+
+  <div class="valores-grid">
+    <div class="valor-card">
+      <div class="icon">🌸</div>
+      <h3>Carinho &amp; Dedicação</h3>
+      <p>Cada peça é tratada como única. Colocamos amor em cada ponto, desde o primeiro alinhavo até o acabamento final.</p>
+    </div>
+    <div class="valor-card">
+      <div class="icon">✨</div>
+      <h3>Qualidade</h3>
+      <p>Trabalhamos com os melhores materiais e técnicas para garantir um resultado que supere sempre as expectativas.</p>
+    </div>
+    <div class="valor-card">
+      <div class="icon">🤝</div>
+      <h3>Confiança</h3>
+      <p>Construímos relações duradouras com nossas clientes, baseadas em transparência, respeito e compromisso.</p>
+    </div>
+  </div>
+
+  <div class="timeline-section">
+    <div class="section-header" style="margin: 0 0 40px;">
+      <span class="diamond">◆</span>
+      <h2>Nossa História</h2>
+      <span class="diamond">◆</span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="year">2015</div>
+          <p>O sonho começa em um pequeno quartinho, com uma única máquina de costura e muita vontade de crescer.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="year">2017</div>
+          <p>Expansão dos serviços: incluímos bordados personalizados e começamos a atender encomendas especiais.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="year">2019</div>
+          <p>Abrimos o primeiro atelier fixo em Jaraguá do Sul, com espaço para receber clientes e ampliar a equipe.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="year">2022</div>
+          <p>Lançamento da linha de kits e materiais de costura, tornando-nos referência completa no segmento.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="year">Hoje</div>
+          <p>Seguimos crescendo com o mesmo carinho do início, atendendo centenas de clientes satisfeitas em toda a região.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="numeros-section">
+    <div class="numero-item"><h3>+10</h3><p>Anos de experiência</p></div>
+    <div class="numero-divider"></div>
+    <div class="numero-item"><h3>500+</h3><p>Clientes atendidas</p></div>
+    <div class="numero-divider"></div>
+    <div class="numero-item"><h3>3</h3><p>Linhas de serviço</p></div>
+    <div class="numero-divider"></div>
+    <div class="numero-item"><h3>100%</h3><p>Feito com amor</p></div>
+  </div>
+
+  <div class="section-header" style="margin-top: 56px;">
+    <span class="diamond">◆</span>
+    <h2>O Que Nossas Clientes Dizem</h2>
+    <span class="diamond">◆</span>
+  </div>
+
+  <div class="depoimentos-grid">
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p>"O bordado que encomendei ficou absolutamente lindo! A qualidade é incrível e o prazo foi cumprido perfeitamente."</p>
+      <div class="author">— Ana Paula S.</div>
+    </div>
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p>"Fiz o ajuste do vestido de noiva aqui e não poderia ter escolhido lugar melhor. Atendimento excelente e resultado perfeito!"</p>
+      <div class="author">— Mariana T.</div>
+    </div>
+    <div class="depoimento-card">
+      <div class="stars">★★★★★</div>
+      <p>"Os kits de costura são de ótima qualidade e o preço é muito justo. Já comprei três vezes e sempre fico satisfeita."</p>
+      <div class="author">— Carla F.</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Maria Fl✿r</div>
+        <p>Especialistas em bordados personalizados, ajustes e materiais de costura. Feito com amor e dedicação em cada ponto.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a onclick="goTo('inicial')">Inicial</a></li>
+          <li><a onclick="goTo('produtos')">Produtos</a></li>
+          <li><a onclick="goTo('sobre')">Sobre Nós</a></li>
+          <li><a onclick="goTo('contato')">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#">(47) 9931-7844</a></li>
+          <li><a href="#">i.galeano@hotmail.com</a></li>
+          <li><a href="#">@mariaflorcostura</a></li>
+          <li><a href="#">Jaraguá do Sul, SC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Maria Flor — Todos os direitos reservados</div>
+  </footer>
+</div>
+
+
+<!-- ================================
+     PAGE: CONTATO
+================================ -->
+<div id="page-contato" class="page">
+
+  <div class="hero-banner">
+    <h1>Fale Conosco</h1>
+  </div>
+
+  <div class="subtitle-divider">
+    <span class="diamond">◆</span>
+    <span>Entre em Contato Conosco</span>
+    <span class="diamond">◆</span>
+  </div>
+
+  <div class="contact-layout">
+    <div class="form-card">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Seu nome completo">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="seuemail@exemplo.com">
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" placeholder="(47) 99999-9999">
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+      <button class="btn-enviar">ENVIAR</button>
+    </div>
+
+    <div class="info-card">
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div class="info-text"><strong>Telefone:</strong><br>(47) 9931-7844</div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div class="info-text"><strong>Email:</strong><br>i.galeano@hotmail.com</div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div class="info-text"><strong>Endereço:</strong><br>Rua João Franzner, 305<br>Jaraguá do Sul / SC</div>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.3!2d-49.0713!3d-26.4854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb3b1e0e0e0e1%3A0x0!2sRua+Jo%C3%A3o+Franzner+305+Jaragu%C3%A1+do+Sul!5e0!3m2!1spt-BR!2sbr!4v1690000000000"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="horarios-section">
+    <div class="section-header" style="margin: 0 0 32px;">
+      <span class="diamond">◆</span>
+      <h2>Horários de Atendimento</h2>
+      <span class="diamond">◆</span>
+    </div>
+    <div class="horarios-grid">
+      <div class="horario-card">
+        <h4>Segunda a Sexta</h4>
+        <p>08:00 às 18:00</p>
+        <span class="badge-aberto">Aberto</span>
+      </div>
+      <div class="horario-card">
+        <h4>Sábado</h4>
+        <p>08:00 às 13:00</p>
+        <span class="badge-aberto">Aberto</span>
+      </div>
+      <div class="horario-card">
+        <h4>Domingo e Feriados</h4>
+        <p>Não atendemos</p>
+        <span class="badge-fechado">Fechado</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Maria Fl✿r</div>
+        <p>Especialistas em bordados personalizados, ajustes e materiais de costura. Feito com amor e dedicação em cada ponto.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a onclick="goTo('inicial')">Inicial</a></li>
+          <li><a onclick="goTo('produtos')">Produtos</a></li>
+          <li><a onclick="goTo('sobre')">Sobre Nós</a></li>
+          <li><a onclick="goTo('contato')">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#">(47) 9931-7844</a></li>
+          <li><a href="#">i.galeano@hotmail.com</a></li>
+          <li><a href="#">@mariaflorcostura</a></li>
+          <li><a href="#">Jaraguá do Sul, SC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Maria Flor — Todos os direitos reservados</div>
+  </footer>
+</div>
+
+
+<script>
+  function goTo(page) {
+    // Hide all pages
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    // Remove all nav active states
+    document.querySelectorAll('nav ul li a').forEach(a => a.classList.remove('active'));
+
+    // Show target page
+    document.getElementById('page-' + page).classList.add('active');
+    // Set nav active
+    document.getElementById('nav-' + page).classList.add('active');
+
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
